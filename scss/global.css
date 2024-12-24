@@ -185,15 +185,43 @@ body .game-sec .vs .VS .vs-text {
   width: 75px;
   align-items: center;
 }
-body .game-sec .vs .l-h {
+body .game-sec .l-h {
   position: relative;
+  margin-top: -440px;
+  margin-left: 1075px;
   display: flex;
-  justify-content: right;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-body .game-sec .vs .l-h button {
+body .game-sec .l-h .b1 {
+  transition: background-color 0.25s, color 0.5s;
+  transition: width 1.5s;
+  border: 3px solid rgb(248, 51, 51);
+  border-radius: 15px;
   justify-content: center;
   align-items: center;
   font-size: large;
   height: 50px;
-  width: 25%;
+  width: 30%;
+  margin-top: 20px;
+}
+body .game-sec .l-h .b2 {
+  transition: background-color 0.25s, color 0.5s;
+  transition: width 1.5s;
+  border: 3px solid rgb(51, 255, 0);
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  height: 50px;
+  width: 30%;
+}
+body .game-sec .l-h .b1:hover,
+body .game-sec .l-h .b2:hover {
+  background-color: rgb(134, 134, 252);
+  color: #ffffff;
+}
+body .game-sec .l-h .b1:oncklick,
+body .game-sec .l-h .b2:oncklick {
+  width: 0%;
 }/*# sourceMappingURL=global.css.map */
