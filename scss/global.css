@@ -185,12 +185,12 @@ body .game-sec .vs .VS .vs-text {
   width: 75px;
   align-items: center;
 }
-body .game-sec .l-h {
+body .game-sec .vs .l-h {
   position: relative;
   display: flex;
   justify-content: right;
 }
-body .game-sec .l-h button {
+body .game-sec .vs .l-h button {
   justify-content: center;
   align-items: center;
   font-size: large;
