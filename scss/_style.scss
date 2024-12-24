@@ -1,8 +1,8 @@
 body {
   height: 25px;
-  background-color: rgb(33, 33, 33);
+  background-color: rgb(85, 85, 85);
   header {
-    background-color: rgb(79, 79, 79);
+    background-color: rgb(120, 120, 120);
     width: 100%;
     height: 100px;
     nav {
@@ -24,20 +24,30 @@ body {
       }
     }
   }
-  .vs {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    display: flex;
-    .game {
-      border: 5px solid rgb(79, 79, 79);
-      width: 50%;
-      height: avto;
+  .game-sec {
+    .vs {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      display: flex;
+      .game {
+        border: 5px solid rgb(79, 79, 79);
+        width: 50%;
+        height: avto;
+      }
+      // .VS {
+      //   height: 100px;
+      //   width: 100px;
+      //   background-color: #bbb;
+      //   border-radius: 50%;
+      // }
+      :hover{
+        .low{
+
+        }
+        .hight{
+          
+        }
+      }
     }
-    // .VS {
-    //   height: 100px;
-    //   width: 100px;
-    //   background-color: #bbb;
-    //   border-radius: 50%;
-    // }
   }
 }
