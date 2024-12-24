@@ -27,26 +27,36 @@ body {
   .game-sec {
     .vs {
       margin-top: 25px;
-      margin-bottom: 25px;
+
       display: flex;
       .game {
         border: 5px solid rgb(79, 79, 79);
         width: 50%;
         height: avto;
       }
-      // .VS {
-      //   height: 100px;
-      //   width: 100px;
-      //   background-color: #bbb;
-      //   border-radius: 50%;
-      // }
-      :hover{
-        .low{
-
+      .VS {
+        position: absolute;
+        height: 75px;
+        width: 75px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        .vs-text {
+          height: 75px;
+          width: 75px;
+          align-items: center;
         }
-        .hight{
-          
-        }
+      }
+    }
+    .l-h {
+      position: relative;
+      display: flex;
+      justify-content: right;
+      button {
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+        height: 50px;
+        width: 25%;
       }
     }
   }

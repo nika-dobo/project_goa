@@ -166,11 +166,34 @@ body header nav .a1 {
 }
 body .game-sec .vs {
   margin-top: 25px;
-  margin-bottom: 25px;
   display: flex;
 }
 body .game-sec .vs .game {
   border: 5px solid rgb(79, 79, 79);
   width: 50%;
   height: avto;
+}
+body .game-sec .vs .VS {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+body .game-sec .vs .VS .vs-text {
+  height: 75px;
+  width: 75px;
+  align-items: center;
+}
+body .game-sec .l-h {
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+body .game-sec .l-h button {
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  height: 50px;
+  width: 25%;
 }/*# sourceMappingURL=global.css.map */
