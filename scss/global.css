@@ -204,9 +204,17 @@ body .s-1 .main-box .box .check_here .check {
   height: 40px;
 }
 body .s-1 .main-box .box .check_here .check:hover {
-  transition: background-color 0.25s, color 0.5s;
+  transition: background-color 0.25s, color 0.25s;
   background-color: rgb(129, 129, 129);
   color: #ffffff;
+}
+body .s-2 .main-h1 {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 50px;
+  color: #000000;
 }
 body .s-2 .main-box {
   display: flex;
@@ -217,17 +225,17 @@ body .s-2 .main-box .big-box {
   border-radius: 10px;
   border: 2px solid black;
   margin-top: 75px;
-  width: 65%;
-  height: 330px;
+  width: 68%;
+  height: 320px;
 }
 body .s-2 .main-box .min-box {
   background-color: rgb(136, 161, 153);
   border-radius: 10px;
   border: 2px solid black;
   margin-top: 75px;
-  margin-left: -100px;
-  width: 25%;
-  height: 330px;
+  margin-left: -60px;
+  width: 27%;
+  height: 320px;
 }
 body .s-2 .main-box h1 {
   text-align: center;
@@ -236,7 +244,52 @@ body .s-2 .main-box h1 {
 }
 body .s-2 .main-box p {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
+}
+body .s-2 .main-box .min-box2 {
+  background-color: rgb(136, 161, 153);
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 25px;
+  width: 37%;
+  height: 330px;
+}
+body .s-2 .main-box .big-box2 {
+  background-color: rgb(136, 161, 153);
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-left: -60px;
+  margin-top: 25px;
+  width: 58%;
+  height: 330px;
+}
+body footer {
+  margin-top: 75px;
+  background-color: rgb(120, 120, 120);
+  width: 100%;
+  height: 200px;
+}
+body footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body footer div .info {
+  flex-direction: column;
+  margin-top: 75px;
+  width: 10%;
+  height: 50px;
+}
+body footer div .info .name {
+  font-size: 17px;
+  color: #ffffff;
+}
+body footer div .info a {
+  font-size: 17px;
+  color: #ffffff;
+}
+body footer div .info a:hover {
+  text-decoration: underline;
 }
 body .game-sec .vs {
   margin-top: 25px;
@@ -297,4 +350,70 @@ body .game-sec .l-h .b2:hover {
 body .game-sec .l-h .b1:oncklick,
 body .game-sec .l-h .b2:oncklick {
   width: 0%;
+}
+body .singup {
+  display: flex;
+  justify-content: center;
+}
+body .singup .singup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(136, 161, 153);
+  border-radius: 20px;
+  margin-top: 75px;
+  height: 550px;
+  width: 400px;
+}
+body .singup .singup-form input {
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
+}
+body .login {
+  display: flex;
+  justify-content: center;
+}
+body .login .login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(136, 161, 153);
+  border-radius: 20px;
+  margin-top: 75px;
+  height: 300px;
+  width: 400px;
+}
+body .login .login-form input {
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
+}
+body .footer {
+  margin-top: 400px;
+  background-color: rgb(120, 120, 120);
+  width: 100%;
+  height: 200px;
+}
+body .footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .footer div .info {
+  flex-direction: column;
+  margin-top: 75px;
+  width: 10%;
+  height: 50px;
+}
+body .footer div .info .name {
+  font-size: 17px;
+  color: #ffffff;
+}
+body .footer div .info a {
+  font-size: 17px;
+  color: #ffffff;
+}
+body .footer div .info a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=global.css.map */
