@@ -204,7 +204,7 @@ body .s-1 .main-box .box .check_here .check {
   height: 40px;
 }
 body .s-1 .main-box .box .check_here .check:hover {
-  transition: background-color 0.25s, color 0.5s;
+  transition: background-color 0.25s, color 0.25s;
   background-color: rgb(129, 129, 129);
   color: #ffffff;
 }
@@ -345,4 +345,42 @@ body .game-sec .l-h .b2:hover {
 body .game-sec .l-h .b1:oncklick,
 body .game-sec .l-h .b2:oncklick {
   width: 0%;
+}
+body .singup {
+  display: flex;
+  justify-content: center;
+}
+body .singup .singup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(136, 161, 153);
+  border-radius: 20px;
+  margin-top: 75px;
+  height: 550px;
+  width: 400px;
+}
+body .singup .singup-form input {
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
+}
+body .login {
+  display: flex;
+  justify-content: center;
+}
+body .login .login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(136, 161, 153);
+  border-radius: 20px;
+  margin-top: 75px;
+  height: 300px;
+  width: 400px;
+}
+body .login .login-form input {
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
 }/*# sourceMappingURL=global.css.map */
