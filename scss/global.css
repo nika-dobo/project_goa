@@ -171,7 +171,6 @@ body .game-sec .vs {
 body .game-sec .vs .game {
   border: 5px solid rgb(79, 79, 79);
   width: 50%;
-  height: avto;
 }
 body .game-sec .vs .VS {
   position: absolute;
