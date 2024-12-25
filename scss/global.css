@@ -416,4 +416,26 @@ body .footer div .info a {
 }
 body .footer div .info a:hover {
   text-decoration: underline;
+}
+body .cars .car-conteiner {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-around;
+}
+body .cars .car-conteiner .car-img {
+  margin-left: 50px;
+}
+body .cars .car-conteiner .car-info {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+body .cars .car-conteiner .car-info .car-name {
+  font-size: 30px;
+}
+body .cars .car-conteiner .car-info .car-info-text {
+  font-size: 20px;
 }/*# sourceMappingURL=global.css.map */
