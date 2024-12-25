@@ -24,15 +24,48 @@ body {
       }
     }
   }
+  .s-1 {
+    .main-box {
+      display: flex;
+      justify-content: space-around;
+      .box {
+        border-radius: 15px;
+        background-color: rgb(136, 161, 153);
+        margin-top: 75px;
+        border: 1px solid rgb(0, 0, 0);
+        width: 25%;
+        height: 450px;
+        overflow: hidden;
+        img {
+          object-fit: cover;
+        }
+        .text {
+          margin-top: 10px;
+          font-size: 20px;
+          color: #000000;
+          text-align: center;
+        }
+        .check_here {
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .check {
+            border-radius: 10px;
+            width: 50%;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
   .game-sec {
     .vs {
       margin-top: 25px;
-
       display: flex;
       .game {
         border: 5px solid rgb(79, 79, 79);
         width: 50%;
-        
       }
       .VS {
         position: absolute;

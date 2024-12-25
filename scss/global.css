@@ -164,6 +164,40 @@ body header nav .a1 {
   font-size: 20px;
   color: #ffffff;
 }
+body .s-1 .main-box {
+  display: flex;
+  justify-content: space-around;
+}
+body .s-1 .main-box .box {
+  border-radius: 15px;
+  background-color: rgb(136, 161, 153);
+  margin-top: 75px;
+  border: 1px solid rgb(0, 0, 0);
+  width: 25%;
+  height: 450px;
+  overflow: hidden;
+}
+body .s-1 .main-box .box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .s-1 .main-box .box .text {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+}
+body .s-1 .main-box .box .check_here {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .s-1 .main-box .box .check_here .check {
+  border-radius: 10px;
+  width: 50%;
+  height: 40px;
+}
 body .game-sec .vs {
   margin-top: 25px;
   display: flex;
