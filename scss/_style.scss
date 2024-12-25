@@ -137,10 +137,17 @@ body {
       justify-content: space-around;
       align-items: center;
       .info{
+        flex-direction: column;
         margin-top: 62.5px;
         width: 10%;
         height: 75px;
         border: #000000 solid 1px;
+        a{
+          color: #000000;
+        }
+        a:hover{
+          text-decoration: underline;
+        }
       }
     }
   }
