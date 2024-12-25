@@ -1,7 +1,7 @@
 fetch("Data.json")
   .then((response) => {
     if (!response.ok) {
-      throw new Error('Network response was not ok ' + response.statusText);
+      throw new Error("Network response was not ok " + response.statusText);
     }
     return response.json();
   })
@@ -11,7 +11,7 @@ fetch("Data.json")
     StartGame(Cars);
   })
   .catch((error) => {
-    console.error('There has been a problem with your fetch operation:', error);
+    console.error("There has been a problem with your fetch operation:", error);
   });
 
 function StartGame(Data) {
@@ -40,6 +40,6 @@ function StartGame(Data) {
     let CarNumberPrice = parseFloat(car1.price.replace("$", ""));
     let Car2NumberPrice = parseFloat(car2.price.replace("$", ""));
   } catch (error) {
-    console.error('Error in StartGame function:', error);
+    console.error("Error in StartGame function:", error);
   }
 }

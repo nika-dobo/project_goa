@@ -425,6 +425,11 @@ body .cars .car-conteiner {
 body .cars .car-conteiner .car-img {
   margin-left: 50px;
 }
+body .cars .car-conteiner .car-img .car {
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+}
 body .cars .car-conteiner .car-info {
   display: flex;
   justify-content: space-around;
@@ -432,10 +437,17 @@ body .cars .car-conteiner .car-info {
   align-items: center;
   margin-left: 50px;
   margin-right: 50px;
+  background-color: rgb(120, 120, 120);
+  border-radius: 10px;
 }
 body .cars .car-conteiner .car-info .car-name {
+  color: #ffffff;
   font-size: 30px;
 }
 body .cars .car-conteiner .car-info .car-info-text {
+  text-align: center;
+  margin-left: 10px;
+  color: #ffffff;
+  margin-top: -150px;
   font-size: 20px;
 }/*# sourceMappingURL=global.css.map */

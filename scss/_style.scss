@@ -296,18 +296,30 @@ body {
       justify-content: space-around;
       .car-img {
         margin-left: 50px;
+        .car {
+          width: 700px;
+          height: 500px;  
+          border-radius: 10px;
+        }
       }
       .car-info {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        align-items: center;        
+        align-items: center;
         margin-left: 50px;
         margin-right: 50px;
-        .car-name{
+        background-color: rgb(120, 120, 120);
+        border-radius: 10px;
+        .car-name {
+          color: #ffffff;
           font-size: 30px;
         }
         .car-info-text {
+          text-align: center;
+          margin-left: 10px;
+          color: #ffffff;
+          margin-top: -150px;
           font-size: 20px;
         }
       }
