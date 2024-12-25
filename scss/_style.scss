@@ -156,70 +156,73 @@ body {
     }
   }
   .game-sec {
+    margin-bottom: 175px;
     .vs {
-      margin-top: 25px;
+      margin-top: 75px;
       display: flex;
+      justify-content: space-around;
       .game {
         border: 5px solid rgb(79, 79, 79);
-        width: 50%;
+        border-radius: 15px;
       }
       .VS {
+        margin-top: 160px;
         position: absolute;
         height: 75px;
         width: 75px;
         background-color: #ffffff;
         border-radius: 50%;
         .vs-text {
+          text-align: center;
           height: 75px;
           width: 75px;
-          align-items: center;
-          // .VS {
-          //   height: 100px;
-          //   width: 100px;
-          //   background-color: #bbb;
-          //   border-radius: 50%;
-          // }
+          margin-top: 33%;
+          font-size: 30px;
         }
       }
     }
     .l-h {
-      position: relative;
-      margin-top: -440px;
-      margin-left: 1075px;
+      margin-top: -360px;
+      align-items: center;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       .b1 {
-        transition: background-color 0.25s, color 0.5s;
-        transition: width 1.5s;
         border: 3px solid rgb(248, 51, 51);
         border-radius: 15px;
         justify-content: center;
         align-items: center;
         font-size: large;
         height: 50px;
-        width: 30%;
-        margin-top: 20px;
+        width: 200px;
+        margin-top: 200px;
       }
       .b2 {
-        transition: background-color 0.25s, color 0.5s;
-        transition: width 1.5s;
         border: 3px solid rgb(51, 255, 0);
         border-radius: 15px;
         justify-content: center;
         align-items: center;
         font-size: large;
         height: 50px;
-        width: 30%;
+        width: 200px;
       }
-      .b1:hover,
-      .b2:hover {
-        background-color: rgb(134, 134, 252);
+      .b1:hover {
+        transition: background-color 0.5s, color 0.5s;
+        // transition: width 1s;
+        // transition: height 1s;
+        background-color: rgb(129, 1, 1);
         color: #ffffff;
+        // height: 70px;
+        // width: 220px;
       }
-      .b1:oncklick,
-      .b2:oncklick {
-        width: 0%;
+      .b2:hover {
+        transition: background-color 0.5s, color 0.5s;
+        // transition: width 1s;
+        // transition: height 1s;
+        background-color: rgb(36, 189, 1);
+        color: #ffffff;
+        // height: 70px;
+        // width: 220px;
       }
     }
   }
@@ -259,10 +262,14 @@ body {
         width: 300px;
         height: 30px;
       }
+      .sub {
+        border-radius: 10px;
+        width: 300px;
+        height: 30px;
+      }
     }
   }
   .footer {
-    margin-top: 400px;
     background-color: rgb(120, 120, 120);
     width: 100%;
     height: 200px;
@@ -296,18 +303,28 @@ body {
       justify-content: space-around;
       .car-img {
         margin-left: 50px;
+        .car {
+          border-radius: 10px;
+        }
       }
       .car-info {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        align-items: center;        
+        align-items: center;
         margin-left: 50px;
         margin-right: 50px;
-        .car-name{
+        background-color: rgb(120, 120, 120);
+        border-radius: 10px;
+        .car-name {
+          color: #ffffff;
           font-size: 30px;
         }
         .car-info-text {
+          text-align: center;
+          margin-left: 10px;
+          color: #ffffff;
+          margin-top: -150px;
           font-size: 20px;
         }
       }

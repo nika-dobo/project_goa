@@ -291,15 +291,20 @@ body footer div .info a {
 body footer div .info a:hover {
   text-decoration: underline;
 }
+body .game-sec {
+  margin-bottom: 175px;
+}
 body .game-sec .vs {
-  margin-top: 25px;
+  margin-top: 75px;
   display: flex;
+  justify-content: space-around;
 }
 body .game-sec .vs .game {
   border: 5px solid rgb(79, 79, 79);
-  width: 50%;
+  border-radius: 15px;
 }
 body .game-sec .vs .VS {
+  margin-top: 160px;
   position: absolute;
   height: 75px;
   width: 75px;
@@ -307,49 +312,47 @@ body .game-sec .vs .VS {
   border-radius: 50%;
 }
 body .game-sec .vs .VS .vs-text {
+  text-align: center;
   height: 75px;
   width: 75px;
-  align-items: center;
+  margin-top: 33%;
+  font-size: 30px;
 }
 body .game-sec .l-h {
-  position: relative;
-  margin-top: -440px;
-  margin-left: 1075px;
+  margin-top: -360px;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 body .game-sec .l-h .b1 {
-  transition: background-color 0.25s, color 0.5s;
-  transition: width 1.5s;
   border: 3px solid rgb(248, 51, 51);
   border-radius: 15px;
   justify-content: center;
   align-items: center;
   font-size: large;
   height: 50px;
-  width: 30%;
-  margin-top: 20px;
+  width: 200px;
+  margin-top: 200px;
 }
 body .game-sec .l-h .b2 {
-  transition: background-color 0.25s, color 0.5s;
-  transition: width 1.5s;
   border: 3px solid rgb(51, 255, 0);
   border-radius: 15px;
   justify-content: center;
   align-items: center;
   font-size: large;
   height: 50px;
-  width: 30%;
+  width: 200px;
 }
-body .game-sec .l-h .b1:hover,
-body .game-sec .l-h .b2:hover {
-  background-color: rgb(134, 134, 252);
+body .game-sec .l-h .b1:hover {
+  transition: background-color 0.5s, color 0.5s;
+  background-color: rgb(129, 1, 1);
   color: #ffffff;
 }
-body .game-sec .l-h .b1:oncklick,
-body .game-sec .l-h .b2:oncklick {
-  width: 0%;
+body .game-sec .l-h .b2:hover {
+  transition: background-color 0.5s, color 0.5s;
+  background-color: rgb(36, 189, 1);
+  color: #ffffff;
 }
 body .singup {
   display: flex;
@@ -389,8 +392,12 @@ body .login .login-form input {
   width: 300px;
   height: 30px;
 }
+body .login .login-form .sub {
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
+}
 body .footer {
-  margin-top: 400px;
   background-color: rgb(120, 120, 120);
   width: 100%;
   height: 200px;
@@ -425,6 +432,9 @@ body .cars .car-conteiner {
 body .cars .car-conteiner .car-img {
   margin-left: 50px;
 }
+body .cars .car-conteiner .car-img .car {
+  border-radius: 10px;
+}
 body .cars .car-conteiner .car-info {
   display: flex;
   justify-content: space-around;
@@ -432,10 +442,17 @@ body .cars .car-conteiner .car-info {
   align-items: center;
   margin-left: 50px;
   margin-right: 50px;
+  background-color: rgb(120, 120, 120);
+  border-radius: 10px;
 }
 body .cars .car-conteiner .car-info .car-name {
+  color: #ffffff;
   font-size: 30px;
 }
 body .cars .car-conteiner .car-info .car-info-text {
+  text-align: center;
+  margin-left: 10px;
+  color: #ffffff;
+  margin-top: -150px;
   font-size: 20px;
 }/*# sourceMappingURL=global.css.map */
