@@ -2,11 +2,21 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import json
 import os
+import base64
 
-app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+Server = Flask(__name__)
+CORS(Server)
 
 DATA_FILE = 'data.json'
+
+def Encode(data):
+    return base64.b64encode(data.encode()).decode()
+
+
+def Decode(data):
+    decoded_data = base64.b64decode(data.encode()).decode()
+    return json.loads(decoded_data)
+
 
 def load_data():
     if os.path.exists(DATA_FILE):
@@ -18,7 +28,7 @@ def save_data(data):
     with open(DATA_FILE, 'w') as file:
         json.dump(data, file)
 
-@app.route('/signup', methods=['POST'])
+@Server.route('/signup', methods=['POST'])
 def signup():
     try:
         data = request.get_json()
@@ -31,26 +41,27 @@ def signup():
         email = data.get('email')
 
         users_data = load_data()
-        if any(user['username'] == username for user in users_data['users']):
+        if any(Decode(user['username']) == username for user in users_data['users']):
             return jsonify({'status': 'failure', 'message': 'Username already exists'})
-        if any(user['email'] == email for user in users_data['users']):
+        if any(Decode(user['email']) == email for user in users_data['users']):
             return jsonify({'status': 'failure', 'message': 'Email is already registered'})
-
+        
         users_data['users'].append({
-            'username': username,
-            'firstName': firstName,
-            'lastName': lastName,
-            'dateOfBirth': dateOfBirth,
-            'password': password,
-            'email': email
+            'username': Encode(username),
+            'firstName': Encode(firstName),
+            'lastName': Encode(lastName),
+            'dateOfBirth': Encode(dateOfBirth),
+            'password': Encode(password),
+            'email': Encode(email),
+            'id': len(users_data['users']) + 1
         })
         save_data(users_data)
         return jsonify({'status': 'success'})
-    except Exception as e:
-        print('Error:', e)
-        return jsonify({'status': 'failure', 'message': str(e)})
+    except Exception as ErrorMessage:
+        print('Error:', ErrorMessage)
+        return jsonify({'status': 'failure', 'message': str(ErrorMessage)})
 
-@app.route('/login', methods=['POST'])
+@Server.route('/login', methods=['POST'])
 def login():
     try:
         data = request.get_json()
@@ -59,16 +70,17 @@ def login():
         password = data.get('password')
         email = data.get('email')
 
-        users_data = load_data()
-        user = next((user for user in users_data['users'] if user['username'] == username and user['password'] == password and user['email'] == email), None)
+        users_data = Decode(load_data())
+
+        user = next((user for user in users_data['users'] if Decode(user['username']) == username and Decode(user['password']) == password and Decode(user['email']) == email), None)
         if user:
             return jsonify({'status': 'success', 'message': 'Login successful'})
         else:
             return jsonify({'status': 'failure', 'message': 'Invalid username, password or email'})
-    except Exception as e:
-        print('Error:', e)
-        return jsonify({'status': 'failure', 'message': str(e)})
+    except Exception as ErrorMessage:
+        print('Error:', ErrorMessage)
+        return jsonify({'status': 'failure', 'message': str(ErrorMessage)})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    Server.run(debug=True)
     

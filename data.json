@@ -1,4 +1,10 @@
-
-
-{"users": [{"username": "admin", "password": "password", "email": "admin@gmail.com"}, {"username": "user1", "password": "pass123", "email": "user@gmail.com"}, {"username": "Developer", "firstName": "gio", "lastName": "tedozashvili", "dateOfBirth": "0315-05-13", "password": "developer", "email": "giopro1986@gmail.com"}]}
-
+{"users": [
+    {
+    "username": "RGV2ZWxvcGVy", 
+    "firstName": "R2lvcmdp", 
+    "lastName": "VGVkb3phc2h2aWxp", 
+    "dateOfBirth": "MDMxNS0wNC0yMQ==", 
+    "password": "cGFzc3dvcmQ=", "email": 
+    "Z2lvcHJvMTk4NkBnbWFpbC5jb20=", "id": 1}
+]
+}
