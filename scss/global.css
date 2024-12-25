@@ -217,17 +217,17 @@ body .s-2 .main-box .big-box {
   border-radius: 10px;
   border: 2px solid black;
   margin-top: 75px;
-  width: 65%;
-  height: 330px;
+  width: 68%;
+  height: 320px;
 }
 body .s-2 .main-box .min-box {
   background-color: rgb(136, 161, 153);
   border-radius: 10px;
   border: 2px solid black;
   margin-top: 75px;
-  margin-left: -100px;
-  width: 25%;
-  height: 330px;
+  margin-left: -60px;
+  width: 27%;
+  height: 320px;
 }
 body .s-2 .main-box h1 {
   text-align: center;
@@ -236,7 +236,24 @@ body .s-2 .main-box h1 {
 }
 body .s-2 .main-box p {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
+}
+body .s-2 .main-box .min-box2 {
+  background-color: rgb(136, 161, 153);
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 25px;
+  width: 37%;
+  height: 330px;
+}
+body .s-2 .main-box .big-box2 {
+  background-color: rgb(136, 161, 153);
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-left: -60px;
+  margin-top: 25px;
+  width: 58%;
+  height: 330px;
 }
 body .game-sec .vs {
   margin-top: 25px;
