@@ -156,14 +156,14 @@ body {
     }
   }
   .game-sec {
+    margin-bottom: 175px;
     .vs {
       margin-top: 75px;
       display: flex;
       justify-content: space-around;
       .game {
         border: 5px solid rgb(79, 79, 79);
-        
-        
+        border-radius: 15px;
       }
       .VS {
         margin-top: 160px;
@@ -171,26 +171,23 @@ body {
         height: 75px;
         width: 75px;
         background-color: #ffffff;
-        border-radius: 50%;        
+        border-radius: 50%;
         .vs-text {
-          text-align: center;       
+          text-align: center;
           height: 75px;
           width: 75px;
-          margin-top: 33%;  
-          font-size: 30px;                     
+          margin-top: 33%;
+          font-size: 30px;
         }
       }
     }
     .l-h {
-      position: relative;
       margin-top: -360px;
       align-items: center;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       .b1 {
-        transition: background-color 0.25s, color 0.5s;
-        transition: width 1.5s;
         border: 3px solid rgb(248, 51, 51);
         border-radius: 15px;
         justify-content: center;
@@ -201,8 +198,6 @@ body {
         margin-top: 200px;
       }
       .b2 {
-        transition: background-color 0.25s, color 0.5s;
-        transition: width 1.5s;
         border: 3px solid rgb(51, 255, 0);
         border-radius: 15px;
         justify-content: center;
@@ -211,10 +206,23 @@ body {
         height: 50px;
         width: 200px;
       }
-      .b1:hover,
-      .b2:hover {
-        background-color: rgb(134, 134, 252);
+      .b1:hover {
+        transition: background-color 0.5s, color 0.5s;
+        // transition: width 1s;
+        // transition: height 1s;
+        background-color: rgb(129, 1, 1);
         color: #ffffff;
+        // height: 70px;
+        // width: 220px;
+      }
+      .b2:hover {
+        transition: background-color 0.5s, color 0.5s;
+        // transition: width 1s;
+        // transition: height 1s;
+        background-color: rgb(36, 189, 1);
+        color: #ffffff;
+        // height: 70px;
+        // width: 220px;
       }
     }
   }
@@ -262,7 +270,6 @@ body {
     }
   }
   .footer {
-    margin-top: 150px;
     background-color: rgb(120, 120, 120);
     width: 100%;
     height: 200px;
