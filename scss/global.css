@@ -164,6 +164,10 @@ body header nav .a1 {
   font-size: 20px;
   color: #ffffff;
 }
+body header nav .a:hover, body header nav .a1:hover {
+  transition: color 0.25s, color 0.5s;
+  color: #000000;
+}
 body .s-1 .main-box {
   display: flex;
   justify-content: space-around;
