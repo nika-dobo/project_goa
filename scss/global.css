@@ -426,8 +426,6 @@ body .cars .car-conteiner .car-img {
   margin-left: 50px;
 }
 body .cars .car-conteiner .car-img .car {
-  width: 700px;
-  height: 500px;
   border-radius: 10px;
 }
 body .cars .car-conteiner .car-info {
