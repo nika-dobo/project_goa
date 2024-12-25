@@ -259,6 +259,11 @@ body {
         width: 300px;
         height: 30px;
       }
+      .sub {
+        border-radius: 10px;
+        width: 300px;
+        height: 30px;
+      }
     }
   }
   .footer {
@@ -296,7 +301,7 @@ body {
       justify-content: space-around;
       .car-img {
         margin-left: 50px;
-        .car { 
+        .car {
           border-radius: 10px;
         }
       }
