@@ -22,9 +22,10 @@ body {
         font-size: 20px;
         color: #ffffff;
       }
-      .a:hover, .a1:hover {
+      .a:hover,
+      .a1:hover {
         transition: color 0.25s, color 0.5s;
-        color: #000000;
+        color: #4a4a4a;
       }
     }
   }
@@ -59,7 +60,44 @@ body {
             width: 50%;
             height: 40px;
           }
+          .check:hover {
+            transition: background-color 0.25s, color 0.5s;
+            background-color: rgb(129, 129, 129);
+            color: #ffffff;
+          }
         }
+      }
+    }
+  }
+  .s-2 {
+    .main-box {
+      display: flex;
+      justify-content: space-around;
+      .big-box {
+        background-color: rgb(136, 161, 153);
+        border-radius: 10px;
+        border: 2px solid black;
+        margin-top: 75px;        
+        width: 65%;
+        height: 330px;
+      }
+      .min-box {
+        background-color: rgb(136, 161, 153);
+        border-radius: 10px;
+        border: 2px solid black;
+        margin-top: 75px;
+        margin-left: -100px;
+        width: 25%;
+        height: 330px;
+      }
+      h1{
+        text-align: center;
+        font-size: 20px;
+        color: #000000;
+      }
+      p{
+        text-align: center;
+        margin-top: 10px;
       }
     }
   }
