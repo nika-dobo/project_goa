@@ -292,14 +292,15 @@ body footer div .info a:hover {
   text-decoration: underline;
 }
 body .game-sec .vs {
-  margin-top: 25px;
+  margin-top: 75px;
   display: flex;
+  justify-content: space-around;
 }
 body .game-sec .vs .game {
   border: 5px solid rgb(79, 79, 79);
-  width: 50%;
 }
 body .game-sec .vs .VS {
+  margin-top: 160px;
   position: absolute;
   height: 75px;
   width: 75px;
@@ -307,14 +308,16 @@ body .game-sec .vs .VS {
   border-radius: 50%;
 }
 body .game-sec .vs .VS .vs-text {
+  text-align: center;
   height: 75px;
   width: 75px;
-  align-items: center;
+  margin-top: 33%;
+  font-size: 30px;
 }
 body .game-sec .l-h {
   position: relative;
-  margin-top: -440px;
-  margin-left: 1075px;
+  margin-top: -360px;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -328,8 +331,8 @@ body .game-sec .l-h .b1 {
   align-items: center;
   font-size: large;
   height: 50px;
-  width: 30%;
-  margin-top: 20px;
+  width: 200px;
+  margin-top: 200px;
 }
 body .game-sec .l-h .b2 {
   transition: background-color 0.25s, color 0.5s;
@@ -340,16 +343,12 @@ body .game-sec .l-h .b2 {
   align-items: center;
   font-size: large;
   height: 50px;
-  width: 30%;
+  width: 200px;
 }
 body .game-sec .l-h .b1:hover,
 body .game-sec .l-h .b2:hover {
   background-color: rgb(134, 134, 252);
   color: #ffffff;
-}
-body .game-sec .l-h .b1:oncklick,
-body .game-sec .l-h .b2:oncklick {
-  width: 0%;
 }
 body .singup {
   display: flex;
@@ -395,7 +394,7 @@ body .login .login-form .sub {
   height: 30px;
 }
 body .footer {
-  margin-top: 400px;
+  margin-top: 150px;
   background-color: rgb(120, 120, 120);
   width: 100%;
   height: 200px;
