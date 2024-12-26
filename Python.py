@@ -15,7 +15,7 @@ def Encode(data):
 
 def Decode(data):
     decoded_data = base64.b64decode(data.encode()).decode()
-    return json.loads(decoded_data)
+    return decoded_data
 
 
 def load_data():
@@ -70,11 +70,20 @@ def login():
         password = data.get('password')
         email = data.get('email')
 
-        users_data = Decode(load_data())
-
+        users_data = load_data()
+        
         user = next((user for user in users_data['users'] if Decode(user['username']) == username and Decode(user['password']) == password and Decode(user['email']) == email), None)
         if user:
-            return jsonify({'status': 'success', 'message': 'Login successful'})
+            user_data = json.dumps({
+                'username': Decode(user['username']),
+                'firstName': Decode(user['firstName']),
+                'lastName': Decode(user['lastName']),
+                'dateOfBirth': Decode(user['dateOfBirth']),
+                'password': Decode(user['password']),
+                'email': Decode(user['email']),
+                'id': user['id']
+            })
+            return jsonify({'status': 'success', 'message': 'Login successful','Data':user_data})
         else:
             return jsonify({'status': 'failure', 'message': 'Invalid username, password or email'})
     except Exception as ErrorMessage:

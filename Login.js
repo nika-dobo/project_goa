@@ -20,6 +20,12 @@ function login(event) {
             alert(data.message);
         } else if (data.status === 'success') {
             alert('Login successful');
+            let userData= JSON.parse(data.Data);
+            document.cookie = `username=${userData.username}; path=/`;
+            document.cookie = `password=${userData.password}; path=/`;
+            document.cookie = `email=${userData.email}; path=/`;
+            document.cookie = `id=${userData.id}; path=/`;
+            console.log(document.cookie);
         } else {
             alert('Login failed');
         }
