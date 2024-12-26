@@ -296,6 +296,7 @@ body .game-sec .Ans {
   margin-top: 100px;
   display: flex;
   background-color: rgb(120, 120, 120);
+  border: #000000 2px solid;
   border-radius: 10px;
   width: 250px;
   height: 75px;
