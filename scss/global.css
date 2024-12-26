@@ -456,4 +456,35 @@ body .cars .car-conteiner .car-info .car-info-text {
   color: #ffffff;
   margin-top: -150px;
   font-size: 20px;
+}
+body .acc .acaunt {
+  width: 100%;
+  height: 600px;
+  margin-top: 75px;
+  background-color: rgb(120, 120, 120);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body .acc .acaunt .image img {
+  width: 250px;
+  height: 250px;
+}
+body .acc .acaunt .info {
+  width: 550px;
+  height: 250px;
+  background-color: rgb(103, 103, 103);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body .acc .acaunt .info h1 {
+  font-size: 50px;
+  color: #ffffff;
+}
+body .acc .acaunt .info h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  color: #ffffff;
 }/*# sourceMappingURL=global.css.map */
