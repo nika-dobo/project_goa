@@ -329,6 +329,7 @@ body .game-sec .car .cars {
   border-radius: 10px;
   width: 250px;
   height: 30px;
+  text-align: center;
 }
 body .game-sec .car .cars .car-name {
   color: #ffffff;
