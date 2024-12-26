@@ -302,6 +302,7 @@ body .game-sec .vs {
 body .game-sec .vs .game {
   border: 5px solid rgb(79, 79, 79);
   border-radius: 15px;
+  filter: brightness(70%);
 }
 body .game-sec .vs .VS {
   margin-top: 160px;
