@@ -1,10 +1,1 @@
-{"users": [
-    {
-    "username": "RGV2ZWxvcGVy", 
-    "firstName": "R2lvcmdp", 
-    "lastName": "VGVkb3phc2h2aWxp", 
-    "dateOfBirth": "MDMxNS0wNC0yMQ==", 
-    "password": "cGFzc3dvcmQ=", "email": 
-    "Z2lvcHJvMTk4NkBnbWFpbC5jb20=", "id": 1}
-]
-}
+{"users": [{"username": "c3dvcmRsZWdlbmQzMg==", "firstName": "R2lvcmdp", "lastName": "VGVkb3phc2h2aWxp", "dateOfBirth": "MDAzNS0wNC0xMg==", "password": "cGFzc3dvcmQ=", "email": "Z2lvcHJvMTk4NkBnbWFpbC5jb20=", "id": 1}]}
