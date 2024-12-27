@@ -156,9 +156,24 @@ body {
     }
   }
   .game-sec {
-    margin-bottom: 175px;
+    .Ans{
+      margin: 0 auto;
+      margin-top: 100px;
+      display: flex;
+      background-color: rgb(120, 120, 120);
+      border: #000000 2px solid;
+      border-radius: 10px;
+      width: 250px;
+      height: 75px;
+      justify-content: center;
+      .an{
+        margin-top: 20px;
+        font-size: 30px;
+        color: #ffffff;
+      }
+    }
     .vs {
-      margin-top: 75px;
+      margin-top: 20px;
       display: flex;
       justify-content: space-around;
       .game {
@@ -179,6 +194,22 @@ body {
           width: 75px;
           margin-top: 33%;
           font-size: 30px;
+        }
+      }
+    }
+    .car {
+      margin-top: 75px;
+      display: flex;
+      justify-content: space-around;
+      .cars {
+        background-color: rgb(120, 120, 120);
+        border-radius: 10px;
+        width: 250px;
+        height: 30px;       
+        text-align: center;
+        .car_name {    
+          margin: 5px;              
+          color: #ffffff;        
         }
       }
     }
@@ -271,6 +302,7 @@ body {
     }
   }
   .footer {
+    margin-top: 75px;
     background-color: rgb(120, 120, 120);
     width: 100%;
     height: 200px;

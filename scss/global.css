@@ -291,11 +291,24 @@ body footer div .info a {
 body footer div .info a:hover {
   text-decoration: underline;
 }
-body .game-sec {
-  margin-bottom: 175px;
+body .game-sec .Ans {
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  background-color: rgb(120, 120, 120);
+  border: #000000 2px solid;
+  border-radius: 10px;
+  width: 250px;
+  height: 75px;
+  justify-content: center;
+}
+body .game-sec .Ans .an {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #ffffff;
 }
 body .game-sec .vs {
-  margin-top: 75px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-around;
 }
@@ -318,6 +331,22 @@ body .game-sec .vs .VS .vs-text {
   width: 75px;
   margin-top: 33%;
   font-size: 30px;
+}
+body .game-sec .car {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-around;
+}
+body .game-sec .car .cars {
+  background-color: rgb(120, 120, 120);
+  border-radius: 10px;
+  width: 250px;
+  height: 30px;
+  text-align: center;
+}
+body .game-sec .car .cars .car_name {
+  margin: 5px;
+  color: #ffffff;
 }
 body .game-sec .l-h {
   margin-top: -360px;
@@ -399,6 +428,7 @@ body .login .login-form .sub {
   height: 30px;
 }
 body .footer {
+  margin-top: 75px;
   background-color: rgb(120, 120, 120);
   width: 100%;
   height: 200px;
