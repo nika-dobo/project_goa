@@ -36,7 +36,7 @@ function signup(event) {
         email: email
     };
 
-    fetch('https://goa57.netlify.app/signup', {
+    fetch('goa57.netlify.app/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
