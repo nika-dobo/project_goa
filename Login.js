@@ -6,7 +6,7 @@ function login(event) {
     const password = document.getElementById('password').value;
     const email = document.getElementById('email').value;
 
-    fetch('goa57.netlify.app/login', {
+    fetch('https://replit.com/@giopro1986/Server/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

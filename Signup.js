@@ -36,7 +36,7 @@ function signup(event) {
         email: email
     };
 
-    fetch('goa57.netlify.app/signup', {
+    fetch('https://replit.com/@giopro1986/Server/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
