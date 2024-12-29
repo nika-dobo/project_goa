@@ -1,13 +1,12 @@
-console.log('global.js loaded');
-const cookie = document.cookie.split('; ').find(row => row.startsWith('username='));
+const cookie = document.cookie.split('; ')
 const profile = document.getElementById('profile');
 
 const usernameInfo = document.getElementById('usernameInfo');
 const emailInfo = document.getElementById('emailInfo');
 
 console.log(cookie);
-const username = cookie.split('=')[1];
-const email = document.cookie.split('; ').find(row => row.startsWith('email=')).split('=')[1];
+const username = cookie.find(row => row.startsWith('username=')).split('=')[1];
+const email = cookie.find(row => row.startsWith('email=')).split('=')[1];
 
 if (cookie) {
     console.log(username);
