@@ -36,7 +36,7 @@ function signup(event) {
         email: email
     };
 
-    fetch('https://replit.com/@giopro1986/Server/signup', {
+    fetch('http://127.0.0.1:5500/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

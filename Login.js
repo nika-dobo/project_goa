@@ -6,7 +6,7 @@ function login(event) {
     const password = document.getElementById('password').value;
     const email = document.getElementById('email').value;
 
-    fetch('https://replit.com/@giopro1986/Server/login', {
+    fetch('http://127.0.0.1:5500/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
