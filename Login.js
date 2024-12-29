@@ -6,7 +6,7 @@ function login(event) {
     const password = document.getElementById('password').value;
     const email = document.getElementById('email').value;
 
-    fetch('http://127.0.0.1:5000/login', {
+    fetch('https://goa57.netlify.app/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

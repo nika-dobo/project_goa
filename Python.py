@@ -12,11 +12,9 @@ DATA_FILE = 'data.json'
 def Encode(data):
     return base64.b64encode(data.encode()).decode()
 
-
 def Decode(data):
     decoded_data = base64.b64decode(data.encode()).decode()
     return decoded_data
-
 
 def load_data():
     if os.path.exists(DATA_FILE):

@@ -36,9 +36,7 @@ function signup(event) {
         email: email
     };
 
-    console.log('Sending user data:', userData);
-
-    fetch('http://127.0.0.1:5000/signup', {
+    fetch('https://goa57.netlify.app/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
