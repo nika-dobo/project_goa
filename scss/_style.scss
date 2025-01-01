@@ -76,7 +76,7 @@ body {
       justify-content: center;
       width: 100%;
       font-size: 50px;
-      color: #000000;
+      color: #ffffff;
     }
     .main-box {
       display: flex;
@@ -102,9 +102,10 @@ body {
       h1 {
         text-align: center;
         font-size: 20px;
-        color: #000000;
+        color: #ffffff;
       }
       p {
+        color: white;
         text-align: center;
         margin-top: 5px;
       }
@@ -156,7 +157,7 @@ body {
     }
   }
   .game-sec {
-    .Ans{
+    .Ans {
       margin: 0 auto;
       margin-top: 100px;
       display: flex;
@@ -166,7 +167,7 @@ body {
       width: 250px;
       height: 75px;
       justify-content: center;
-      .an{
+      .an {
         margin-top: 20px;
         font-size: 30px;
         color: #ffffff;
@@ -205,11 +206,11 @@ body {
         background-color: rgb(120, 120, 120);
         border-radius: 10px;
         width: 250px;
-        height: 30px;       
+        height: 30px;
         text-align: center;
-        .car_name {    
-          margin: 5px;              
-          color: #ffffff;        
+        .car_name {
+          margin: 5px;
+          color: #ffffff;
         }
       }
     }

@@ -214,7 +214,7 @@ body .s-2 .main-h1 {
   justify-content: center;
   width: 100%;
   font-size: 50px;
-  color: #000000;
+  color: #ffffff;
 }
 body .s-2 .main-box {
   display: flex;
@@ -240,9 +240,10 @@ body .s-2 .main-box .min-box {
 body .s-2 .main-box h1 {
   text-align: center;
   font-size: 20px;
-  color: #000000;
+  color: #ffffff;
 }
 body .s-2 .main-box p {
+  color: white;
   text-align: center;
   margin-top: 5px;
 }
