@@ -26,6 +26,12 @@ def save_data(data):
     with open(DATA_FILE, 'w') as file:
         json.dump(data, file)
 
+
+try:
+    print('Loading data...')
+except:
+
+
 @Server.route('/signup', methods=['POST'])
 def signup():
     try:
